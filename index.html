@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JavaScript Assignment</title>
+  <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+  <header>
+    <h1>🌟 Welcome to Interactivity</h1>
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1 & 2: Interactive Elements -->
+    <section>
+      <h2>🎮 Counter Game</h2>
+      <p>Click the button to increase your score:</p>
+      <button id="counterBtn">Click Me!</button>
+      <p>Score: <span id="score">0</span></p>
+    </section>
+
+    <section>
+      <h2>❓ FAQ</h2>
+      <div class="faq">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer">JavaScript is a programming language that adds interactivity to web pages.</p>
+      </div>
+      <div class="faq">
+        <h3 class="faq-question">What is DOM manipulation?</h3>
+        <p class="faq-answer">It’s the process of dynamically changing HTML/CSS using JavaScript.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>📋 Register Here</h2>
+      <form id="registerForm" novalidate>
+        <label>
+          Name: 
+          <input type="text" id="name" placeholder="Enter your name">
+          <span class="error" id="nameError"></span>
+        </label><br><br>
+
+        <label>
+          Email: 
+          <input type="text" id="email" placeholder="Enter your email">
+          <span class="error" id="emailError"></span>
+        </label><br><br>
+
+        <label>
+          Password: 
+          <input type="password" id="password" placeholder="Enter password">
+          <span class="error" id="passwordError"></span>
+        </label><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formSuccess" class="success"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
